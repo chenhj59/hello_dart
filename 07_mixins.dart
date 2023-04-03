@@ -11,5 +11,6 @@ mixin Piloted {
 class PilotedCraft extends Spacecraft with Piloted{
   // ...
 
+
   PilotedCraft(super.name, DateTime super.launchDate, this.altitude);
 }
