@@ -28,7 +28,7 @@ class Spacecraft {
 }
 
 void main() {
-  var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
+  var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5)); // 构建对象无需new
   voyager.describe();
 
   var voyager3 = Spacecraft.unlaunched('Voyager III');
