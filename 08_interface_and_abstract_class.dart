@@ -21,3 +21,8 @@ abstract class Describable {
     print('========');
   }
 }
+
+void main() {
+  var voyager = MockSpaceship('Voyager I', DateTime(1977, 9, 5)); // 构建对象无需new
+  voyager.describe();
+}
