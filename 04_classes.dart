@@ -3,7 +3,7 @@ class Spacecraft {
   DateTime? launchDate;
 
   // Read-only non-final property
-  int? get launchYear => launchDate?.year;
+  int? get launchYear => launchDate?.year;  // 函数
 
   // Constructor, with syntactic sugar for assignment to members.
   Spacecraft(this.name, this.launchDate) {
