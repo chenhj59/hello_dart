@@ -3,6 +3,7 @@ import '04_classes.dart';
 
 const oneSecond = Duration(seconds: 1);
 
+// Future：在后面某个时间，根据函数内容返回操作结果
 Future<void> printWithDelay(String message) async {
   await Future.delayed(oneSecond);
   print(message);
@@ -36,4 +37,13 @@ Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
     await Future.delayed(oneSecond);
     yield '${craft.name} files by $object';
   }
+}
+
+void main() {
+  String message = '你好！';
+  Iterable<String> objects = {'hello'};
+
+  printWithDelay(message);
+  printWithDelayTwo(message);
+  creatDescriptions(objects);
 }
