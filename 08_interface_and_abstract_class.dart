@@ -1,5 +1,5 @@
 import '04_classes.dart';
-
+// dart每个类也是接口
 class MockSpaceship implements Spacecraft {
   String name;
   DateTime? launchDate;
