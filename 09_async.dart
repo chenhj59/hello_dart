@@ -42,8 +42,10 @@ Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
 void main() {
   String message = '你好！';
   Iterable<String> objects = {'hello'};
+  var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
 
   printWithDelay(message);
   printWithDelayTwo(message);
   creatDescriptions(objects);
+  report(voyager, objects);
 }
