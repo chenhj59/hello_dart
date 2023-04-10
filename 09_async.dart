@@ -5,6 +5,7 @@ const oneSecond = Duration(seconds: 1);
 
 // Future：在后面某个时间，根据函数内容返回操作结果
 Future<void> printWithDelay(String message) async {
+  // 阻塞式
   await Future.delayed(oneSecond);
   print(message);
 }
