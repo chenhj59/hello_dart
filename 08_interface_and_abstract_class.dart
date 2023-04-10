@@ -1,11 +1,15 @@
 import '04_classes.dart';
 
 class MockSpaceship implements Spacecraft {
-  String name = '';
+  String name;
   DateTime? launchDate;
   int? get launchYear => launchDate?.year;
 
-  void describe() {}
+  MockSpaceship(this.name, this.launchDate) {}
+
+  void describe() {
+    print('MockSpaceship');
+  }
 }
 
 abstract class Describable {
@@ -17,4 +21,3 @@ abstract class Describable {
     print('========');
   }
 }
-
