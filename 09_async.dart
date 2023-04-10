@@ -34,7 +34,7 @@ Future<void> creatDescriptions(Iterable<String> objects) async {
   }
 }
 
-// Future的积分，连续形式
+// Stream：Future的积分，连续形式
 Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
   for (final object in objects) {
     await Future.delayed(oneSecond);
