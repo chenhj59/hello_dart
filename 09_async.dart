@@ -3,7 +3,7 @@ import '04_classes.dart';
 
 const oneSecond = Duration(seconds: 1);
 
-// Future：在后面某个时间，根据函数内容返回操作结果
+// Future：在后面某个时间，根据函数内容返回操作结果(Future 对象)
 // async：标记函数为异步函数，故可在函数内使用await
 Future<void> printWithDelay(String message) async {
   // 阻塞式
