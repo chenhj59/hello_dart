@@ -15,7 +15,7 @@ class Spacecraft {
 
   // Method.
   void describe() {
-    print('Spacecraft：$name');
+    print('Spacecraft：$name'); // $ 用于连接字符串
     // Type promotion doesn't work on getters.
     var launchDate = this.launchDate;
     if (launchDate != null) {
