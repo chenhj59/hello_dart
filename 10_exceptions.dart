@@ -15,7 +15,9 @@ Future<void> describeFlybyObjects(List<String> flybyObjects) async {
 
 void main() {
   var astronauts = 0;
+  List<String> flybyObjects = ['hello'];
 
+  describeFlybyObjects(flybyObjects);
   if (astronauts == 0) {
     throw StateError('No astronauts.');
   }
