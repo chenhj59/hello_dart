@@ -6,3 +6,7 @@ class Oribiter extends Spacecraft {
 
   Oribiter(super.name, DateTime super.launchDate, this.altitude);
 }
+
+void main() {
+  Oribiter('chen', DateTime(1927), 3);
+}
