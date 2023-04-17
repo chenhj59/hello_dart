@@ -18,7 +18,8 @@ void main() {
   List<String> flybyObjects = ['hello'];
 
   describeFlybyObjects(flybyObjects);
+  // 抛出异常，导致describeFlybyObjects输出被终止
   if (astronauts == 0) {
-    throw StateError('No astronauts.');
+    throw StateError('No astronauts.'); 
   }
 }
